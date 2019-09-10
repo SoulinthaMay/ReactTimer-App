@@ -2,14 +2,16 @@ var React = require('react');
 var Nav = require('Nav');
 
 var Main = (props) => {
-    return(
+    return (
         <div>
-            <Nav/>
-            <div>
-                <p>Main.jsx Rendered</p>
-                {props.children}
+            <Nav />
+            <div className="row">
+                <div className="column small-centered medium-6 large-4">
+                    {props.children}
+                </div>
             </div>
-        </div>  
+
+        </div>
     );
 }
 module.exports = Main;
